@@ -17,6 +17,9 @@
 		B2BACE3220697F1E009ECA6B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BACE3120697F1E009ECA6B /* AboutViewController.swift */; };
 		B2BACE3320697F1E009ECA6B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BACE3120697F1E009ECA6B /* AboutViewController.swift */; };
 		B2BACE3420697F1E009ECA6B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BACE3120697F1E009ECA6B /* AboutViewController.swift */; };
+		B2BACE3A206986C0009ECA6B /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = B2BACE39206986C0009ECA6B /* BullsEye.html */; };
+		B2BACE3B206986C0009ECA6B /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = B2BACE39206986C0009ECA6B /* BullsEye.html */; };
+		B2BACE3C206986C0009ECA6B /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = B2BACE39206986C0009ECA6B /* BullsEye.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,7 @@
 		B2BACE0F20692482009ECA6B /* BullsEyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeUITests.swift; sourceTree = "<group>"; };
 		B2BACE1120692482009ECA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2BACE3120697F1E009ECA6B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		B2BACE39206986C0009ECA6B /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		B2BACDEE20692482009ECA6B /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				B2BACE39206986C0009ECA6B /* BullsEye.html */,
 				B2BACDEF20692482009ECA6B /* AppDelegate.swift */,
 				B2BACDF120692482009ECA6B /* ViewController.swift */,
 				B2BACE3120697F1E009ECA6B /* AboutViewController.swift */,
@@ -238,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2BACDFA20692482009ECA6B /* LaunchScreen.storyboard in Resources */,
+				B2BACE3A206986C0009ECA6B /* BullsEye.html in Resources */,
 				B2BACDF720692482009ECA6B /* Assets.xcassets in Resources */,
 				B2BACDF520692482009ECA6B /* Main.storyboard in Resources */,
 			);
@@ -247,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2BACE3B206986C0009ECA6B /* BullsEye.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2BACE3C206986C0009ECA6B /* BullsEye.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
