@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var slider: UISlider!
     
+    var score: Int = 0
     var currentValue: Int = 50
     var targetValue: Int = 0
     var roundCount: Int = 0
@@ -50,6 +51,13 @@ class ViewController: UIViewController {
         alert.addAction(action)
         
         present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func startOver(_ sender: UIButton) {
+        roundCount = 0
+        score = 0
+        scoreLabel.text = String(score)
+        startNewRound()
     }
     
     func startNewRound() {
