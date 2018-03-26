@@ -34,7 +34,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onSliderMove(_ sender: UISlider) {
-        print("slider value: \(sender.value)")
         currentValue = lroundf(sender.value)
     }
     
@@ -77,9 +76,6 @@ class ViewController: UIViewController {
         resetSlider()
         
         incrementRoundCount()
-        
-        print("new target value: \(targetValue)")
-        print("round: \(roundCount)")
     }
     
     fileprivate func displayScore() {
