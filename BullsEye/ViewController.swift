@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         styleSlider()
-        startNewRound()
+        startNewGame()
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,20 +55,20 @@ class ViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
-    fileprivate func displayScore() {
-        scoreLabel.text = String(score)
-    }
-    
     @IBAction func startOver(_ sender: UIButton) {
-        roundCount = 0
-        score = 0
-        displayScore()
-        startNewRound()
+        startNewGame()
     }
     
     func calculateRoundScore() -> Int {
         let difference = abs(targetValue - currentValue)
         return (100 - difference)
+    }
+    
+    fileprivate func startNewGame() {
+        roundCount = 0
+        score = 0
+        displayScore()
+        startNewRound()
     }
     
     func startNewRound() {
@@ -80,6 +80,10 @@ class ViewController: UIViewController {
         
         print("new target value: \(targetValue)")
         print("round: \(roundCount)")
+    }
+    
+    fileprivate func displayScore() {
+        scoreLabel.text = String(score)
     }
     
     fileprivate func resetTarget() {
