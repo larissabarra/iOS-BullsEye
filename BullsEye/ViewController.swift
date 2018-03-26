@@ -38,8 +38,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showAlert(_ sender: UIButton) {
-        let difference = abs(targetValue - currentValue)
-        let points = 100 - difference
+        let points = calculateRoundScore()
         
         let alert = UIAlertController(title: "Hello World", message: "You hit \(currentValue).\nThat's \(points) points on this round!", preferredStyle: .alert)
         
@@ -55,11 +54,20 @@ class ViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
+    fileprivate func displayScore() {
+        scoreLabel.text = String(score)
+    }
+    
     @IBAction func startOver(_ sender: UIButton) {
         roundCount = 0
         score = 0
-        scoreLabel.text = String(score)
+        displayScore()
         startNewRound()
+    }
+    
+    func calculateRoundScore() -> Int {
+        let difference = abs(targetValue - currentValue)
+        return (100 - difference)
     }
     
     func startNewRound() {
