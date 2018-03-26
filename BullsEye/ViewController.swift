@@ -38,17 +38,19 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showAlert(_ sender: UIButton) {
-        print("button pressed")
-        print("final slider value: \(currentValue)")
-        print("target value: \(targetValue)")
+        let difference = abs(targetValue - currentValue)
+        let points = 100 - difference
         
-        let alert = UIAlertController(title: "Hello World", message: "my first app", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Hello World", message: "You hit \(currentValue).\nThat's \(points) points on this round!", preferredStyle: .alert)
         
         let action = UIAlertAction(title: "OK", style: .default, handler: ({_ in
                 self.startNewRound()
             })
         )
         alert.addAction(action)
+        
+        score += points
+        scoreLabel.text = String(score)
         
         present(alert, animated: true, completion: nil)
     }
