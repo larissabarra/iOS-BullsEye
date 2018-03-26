@@ -14,6 +14,9 @@
 		B2BACDFA20692482009ECA6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BACDF820692482009ECA6B /* LaunchScreen.storyboard */; };
 		B2BACE0520692482009ECA6B /* BullsEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BACE0420692482009ECA6B /* BullsEyeTests.swift */; };
 		B2BACE1020692482009ECA6B /* BullsEyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BACE0F20692482009ECA6B /* BullsEyeUITests.swift */; };
+		B2BACE3220697F1E009ECA6B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BACE3120697F1E009ECA6B /* AboutViewController.swift */; };
+		B2BACE3320697F1E009ECA6B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BACE3120697F1E009ECA6B /* AboutViewController.swift */; };
+		B2BACE3420697F1E009ECA6B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BACE3120697F1E009ECA6B /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,7 @@
 		B2BACE0B20692482009ECA6B /* BullsEyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullsEyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BACE0F20692482009ECA6B /* BullsEyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeUITests.swift; sourceTree = "<group>"; };
 		B2BACE1120692482009ECA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2BACE3120697F1E009ECA6B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 			children = (
 				B2BACDEF20692482009ECA6B /* AppDelegate.swift */,
 				B2BACDF120692482009ECA6B /* ViewController.swift */,
+				B2BACE3120697F1E009ECA6B /* AboutViewController.swift */,
 				B2BACDF320692482009ECA6B /* Main.storyboard */,
 				B2BACDF620692482009ECA6B /* Assets.xcassets */,
 				B2BACDF820692482009ECA6B /* LaunchScreen.storyboard */,
@@ -259,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2BACE3220697F1E009ECA6B /* AboutViewController.swift in Sources */,
 				B2BACDF220692482009ECA6B /* ViewController.swift in Sources */,
 				B2BACDF020692482009ECA6B /* AppDelegate.swift in Sources */,
 			);
@@ -268,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2BACE3320697F1E009ECA6B /* AboutViewController.swift in Sources */,
 				B2BACE0520692482009ECA6B /* BullsEyeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2BACE3420697F1E009ECA6B /* AboutViewController.swift in Sources */,
 				B2BACE1020692482009ECA6B /* BullsEyeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
