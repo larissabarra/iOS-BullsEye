@@ -5,7 +5,7 @@
 //  Created by Larissa Barra Conde on 26/03/18.
 //  Copyright © 2018 CapDev ThoughtWorks. All rights reserved.
 //
-
+import QuartzCore
 import UIKit
 
 class ViewController: UIViewController {
@@ -51,6 +51,11 @@ class ViewController: UIViewController {
     
     @IBAction func startOver(_ sender: UIButton) {
         startNewGame()
+        let transition = CATransition()
+        transition.type = kCATransitionFade
+        transition.duration = 1
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+        view.layer.add(transition, forKey: nil)
     }
     
     func calculateRoundScore() -> Int {
@@ -58,7 +63,7 @@ class ViewController: UIViewController {
         return (100 - difference)
     }
     
-    fileprivate func startNewGame() {
+    func startNewGame() {
         roundCount = 0
         score = 0
         displayScore()
